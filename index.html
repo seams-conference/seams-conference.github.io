@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="SEAMS is the International Conference on Software Engineering for Adaptive and Self-Managing Systems."
+    >
+    <title>SEAMS | Software Engineering for Adaptive and Self-Managing Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#home" aria-label="SEAMS home">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="assets/seams-logo-banner-no-bg.png" alt="">
+        </span>
+        <span class="brand-name">SEAMS - International Conference on Software Engineering for Adaptive and Self-Managing Systems</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+        <span class="menu-button__line"></span>
+        <span class="menu-button__line"></span>
+      </button>
+    </header>
+
+    <nav class="menu-panel" id="site-menu" aria-label="Main menu" aria-hidden="true">
+      <div class="menu-panel__inner">
+        <p class="menu-panel__eyebrow">Menu</p>
+        <a href="#home">Home</a>
+        <a href="conference-series.html">Conference Series</a>
+        <a href="leadership.html">Leadership</a>
+      </div>
+    </nav>
+
+    <main id="home">
+      <section class="home-section" aria-labelledby="hero-title">
+        <div class="home-section__header">
+          <p class="hero__kicker">International Conference on</p>
+          <h1 id="hero-title">Software Engineering for Adaptive and Self&#8209;Managing Systems</h1>
+        </div>
+
+        <div class="home-section__text">
+          <p>
+            Today we are building an exciting future in which autonomous vehicles navigate complex environments,
+            smart cities help solve public problems and achieve a higher quality of life, and service robots
+            support social care workers or perform tasks that are too dangerous for humans. However, these
+            software-intensive systems must continuously preserve and optimize their operation in the presence
+            of uncertain changes in their operating environment, resource variability, evolving user needs,
+            attacks and faults. In addition, the complexity of these systems demands them to adapt and manage
+            themselves autonomously.
+          </p>
+          <p>
+            SEAMS is an <a href="https://portal.core.edu.au/conf-ranks/?search=SEAMS&amp;by=all&amp;source=ICORE2026&amp;sort=atitle&amp;page=1" target="_blank" rel="noopener noreferrer">ICORE-A</a> ranked conference that applies software engineering methods, techniques, processes,
+            and tools to support the construction of safe, performant, and cost-effective self-adaptive and
+            autonomous systems that provide self-* properties like self-configuration, self-healing,
+            self-optimization, and self-protection. The objective of SEAMS is to bring together researchers and
+            practitioners from academia, industry, and government to investigate, discuss, examine, and advance
+            the fundamental principles, state of the art, and the solutions addressing critical challenges of
+            engineering self-adaptive and self-managing systems.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
