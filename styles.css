@@ -677,6 +677,96 @@ h1 {
   font-weight: 700;
 }
 
+.charter-section {
+  min-height: 100vh;
+  padding: 132px clamp(22px, 7vw, 96px) clamp(52px, 8vw, 92px);
+}
+
+.charter-section__header {
+  max-width: 900px;
+  margin-bottom: 36px;
+}
+
+.charter-section__header h1 {
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 5.5vw, 5.8rem);
+}
+
+.charter-section__header p:not(.hero__kicker) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.75;
+}
+
+.charter-download {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  max-width: 760px;
+  padding: 22px;
+  border: 1px solid rgba(244, 122, 32, 0.34);
+  border-radius: 14px;
+  background: rgba(5, 7, 6, 0.54);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.24),
+    inset 0 0 0 1px rgba(255, 216, 189, 0.05);
+  backdrop-filter: blur(18px);
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.charter-download:hover {
+  border-color: rgba(244, 122, 32, 0.72);
+  background: rgba(244, 122, 32, 0.08);
+  transform: translateY(-2px);
+}
+
+.charter-download__icon {
+  display: grid;
+  width: 74px;
+  height: 74px;
+  place-items: center;
+  border: 1px solid rgba(244, 122, 32, 0.32);
+  border-radius: 999px;
+  color: #ffd8bd;
+  background: rgba(244, 122, 32, 0.08);
+}
+
+.charter-download__icon svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.charter-download__content {
+  display: grid;
+  gap: 8px;
+}
+
+.charter-download__kicker {
+  color: var(--orange);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.charter-download strong {
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  line-height: 1.1;
+}
+
+.charter-download__content span:last-child {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 @media (max-width: 1120px) {
   .home-section {
     grid-template-columns: 1fr;
@@ -772,6 +862,22 @@ h1 {
   .leadership-section {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .charter-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .charter-download {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .charter-download__icon {
+    width: 58px;
+    height: 58px;
   }
 
   .leader-card {

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="SEAMS Charter defining steering committee duties and annual conference organization policies."
+    >
+    <title>Charter | SEAMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="SEAMS home">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="assets/seams-logo-banner-no-bg.png" alt="">
+        </span>
+        <span class="brand-name">SEAMS - International Conference on Software Engineering for Adaptive and Self-Managing Systems</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+        <span class="menu-button__line"></span>
+        <span class="menu-button__line"></span>
+      </button>
+    </header>
+
+    <nav class="menu-panel" id="site-menu" aria-label="Main menu" aria-hidden="true">
+      <div class="menu-panel__inner">
+        <p class="menu-panel__eyebrow">Menu</p>
+        <a href="index.html">Home</a>
+        <a href="conference-series.html">Conference Series</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="#charter">Charter</a>
+      </div>
+    </nav>
+
+    <main id="charter">
+      <section class="charter-section" aria-labelledby="charter-title">
+        <div class="charter-section__header">
+          <p class="hero__kicker">Charter</p>
+          <h1 id="charter-title">SEAMS Charter</h1>
+          <p>
+            The SEAMS Charter defines the duties and policies for the Steering Committee and the key roles to the annual organization of the conference
+          </p>
+        </div>
+
+        <a class="charter-download" href="assets/docs/SEAMS-Charter-v1.1.pdf" download>
+          <span class="charter-download__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M7 3h7l4 4v14H7z"></path>
+              <path d="M14 3v5h4"></path>
+              <path d="M9 14h6"></path>
+              <path d="M12 11v6"></path>
+              <path d="m9.5 14.5 2.5 2.5 2.5-2.5"></path>
+            </svg>
+          </span>
+          <span class="charter-download__content">
+            <span class="charter-download__kicker">PDF Download</span>
+            <strong>SEAMS Charter v1.1</strong>
+            <span>Approved by the SEAMS 2025 Steering Committee on April 28, 2025.</span>
+          </span>
+        </a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
